@@ -24,7 +24,6 @@ const darkTheme = createTheme({
 
 function Header() {
   const {currency, setCurrency} = CryptoState()
-  console.log(currency)
   const classes = useStyles()
   return (
     <ThemeProvider theme={darkTheme}>
