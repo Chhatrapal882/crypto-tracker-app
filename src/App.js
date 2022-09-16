@@ -9,7 +9,6 @@ const useStyles = makeStyles({
   App: {
     backgroundColor: "black",
     color: "white",
-    height:"100vh"
   },
 });
 function App() {

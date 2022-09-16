@@ -48,10 +48,10 @@ function Carousel() {
 
   const items =
     trending &&
-    trending.map((coin) => {
-      const price = coin.price_change_percentage_24h >= 0;
+    trending.map((coin, index) => {
+      const price = coin.price_change_percentage_24h > 0;
       return (
-        <Link className={classes.caresouselItem} to={`coind/${coin?.id}`}>
+        <Link className={classes.caresouselItem} to={`coind/${coin?.id}`} key={index}>
           <img
             src={coin?.image}
             alt={coin?.name}
